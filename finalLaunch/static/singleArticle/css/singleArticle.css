@@ -1,0 +1,198 @@
+body
+{
+	margin: 0 auto;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-family: Ubuntu!important;
+	color: #333333!important;
+}
+a
+{
+	text-decoration: none;
+}
+
+li
+{
+	list-style: none;
+}
+.f-share
+{
+	background-color: #3a5795;
+}
+.in-share
+{
+	background-color: #287bbc;
+}
+.tw-share
+{
+	background-color: #55acee;
+}
+.g-share
+{
+	background-color: #d34836;
+}
+.button2
+{
+	margin-top: 15px;
+	width: 150px;
+	height: 32px;
+	float: right;
+}
+.button2 .btn
+{
+	padding: 6px 12px 6px 12px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+
+.button2 .btn-default
+{
+	border-color: transparent;
+}
+
+
+::-webkit-input-placeholder
+{
+   	color: #fff;
+   	font-size: 8pt;
+   	font-style: italic;
+   	padding-left: 10px;
+}
+
+/* Header Starts..............................................................................*/
+
+#top-header
+{
+	width:100%; 
+	height:65px;
+	background-color: #333333;
+}
+#top-header div
+{
+
+}
+#blog-logo
+{
+	margin-top: 20px;
+	height: 16px;
+	width: 142px;
+	float: left;
+}
+.article-tag1,.article-tag2
+{
+	position: relative;
+	top: 20px;
+	color: #41dbeb;
+	float: right;
+	
+}
+.article-tag1
+{
+	margin-left: 30px;
+}
+.article-tag2
+{
+	font-size: 11px;
+	margin-top: 4px;
+	color: #fff;
+}
+
+#home-link
+{
+	height: 22px;
+	width: 64px;
+
+}
+/*Article Banner..............................................................................*/
+#article-banner
+{
+	height: 500px;
+}
+.img-inside img
+{
+	height: 500px;
+	width: 100%;
+}
+.share-butts
+{
+	overflow: hidden;
+}
+.content-p p
+{
+	margin-top: 40px;
+	text-align: justify;
+}
+.article-by
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #41dbeb;
+
+}
+.pub-date
+{
+	margin-top: 20px;
+	color: #41dbeb;
+}
+/*Connect Us Starts..................................................................................*/
+#connect-us
+{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.connect-heading h4
+{
+	text-align: center;
+	font-family: Arvo;
+	letter-spacing: 5px;
+	font-weight: bolder;
+}
+.footer-stuff
+{
+	margin-top: 50px;
+}
+.footer-nav
+{
+	text-align: center;
+}
+.p-span
+{
+	color: #eb6a2b;
+	font-style: italic;
+	font-weight: bold;
+}
+.p-span:hover
+{
+	color: #eb6a2b;
+}
+/*Tag Line Stuff Starts..................................................................*/
+#tag-line
+{
+	margin-top: 50px;
+	text-align: center;
+	height: 107px;
+	background-color: #333333;
+	color: #41dbeb;
+}
+#tag-line h3
+{
+	margin-top: 40px;
+}
+
+#hiring
+{
+	text-align: center;
+	height: 42px;
+	background-color: #41dbeb;
+	color: #333333;
+	font-weight: bold;
+}
+

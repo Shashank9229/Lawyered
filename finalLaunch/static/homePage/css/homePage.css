@@ -1,0 +1,460 @@
+body
+{
+	margin: 0 auto;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-family: Ubuntu!important;
+	color: #333333;
+}
+a
+{
+	text-decoration: none;
+}
+
+li
+{
+	list-style: none;
+}
+
+input[type="email"]
+{
+	width: 276px;
+    height: 33px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+}
+::-webkit-input-placeholder
+{
+   	color: #fff!important;
+   	font-size: 8pt;
+   	font-style: italic;
+   	text-align: left!important;
+   	
+}
+input:-webkit-autofill
+{
+	background-color: transparent!important;
+}
+#button2
+{
+	margin-top: 0px;
+}
+#button2.btn
+{
+	position: relative;
+	left:-5px;
+	padding: 8px 12px 8px 12px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	background-color: #eb6a2b;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+
+#button2.btn-default
+{
+	border-color: transparent;
+}
+
+/*Header Starts.................................................................................. */
+
+header
+{
+	height: 659px;	
+	background: url('../images/banner.jpg') no-repeat center center fixed;
+	/*background-position: -20px -20px;*/
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.header-container
+{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#lawyered-logo
+{
+	height:77px;
+	width: 228px;
+	margin-bottom: 66px;
+	display:inline-block;
+
+	
+}
+#rocket-img
+{
+	display: block;
+	margin:0 auto;
+}
+.top-links
+{
+	margin-top: 35px;
+	overflow: hidden;
+}
+.top-link1
+{
+	margin-left: 35px;
+}
+.top-link1,
+.top-link2
+{
+	float: right;
+}
+.top-link1 a,
+.top-link2 a
+{
+	color: #fff;
+	font-size: 11.5px;
+	letter-spacing: 2px;
+
+}
+.top-link1 a:hover,
+.top-link2 a:hover
+{
+	text-decoration: none;
+	color: #41dbeb;
+	transition:all .3s ease-in-out;
+	
+}
+#jugard
+{
+	position: absolute;
+	color: #fff;
+	font-family: Arvo;
+	font-weight: bold;
+	font-size: 20px;
+	left: 31%;
+	top: 5px;
+
+}
+#head-head
+{
+	position: relative;
+
+}
+#head-head p
+{
+	margin-top: 0px;
+	margin-right: 62px;
+	color: #fff;
+	font-family: Arvo;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+
+}
+#change-stuff
+{
+	position: relative;
+	left: 6%;
+}
+#header-banner
+{
+	margin-top: 35px;
+	color: #fff;
+	font-family: Arvo;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	line-height: 1.9;
+	text-shadow:0px .6px;
+	text-transform: uppercase;
+	text-indent: left;
+	text-align: left;
+	position: relative;
+	padding-left: 43%;
+	display:inherit;
+
+
+}
+#header-banner #change-stuff
+{
+	color: #41dbeb;
+	font-size: 20px;
+}
+
+.form-stuff
+{
+	margin-top: 10px;
+	
+}
+.form-stuff p
+{
+	margin-top:10px; 
+	text-align: center;
+	margin-bottom:25px;
+	color:#fff;
+	font-size: 19px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-style: italic;
+}
+#id_email_id
+{
+	border-right:none;
+}
+#post-button
+{
+	
+}
+.warning
+{
+	color:#eb6a2b!important;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Our Question..................................................................................*/
+#our-question
+{
+	text-align: center;
+	margin-top: 50px;
+}
+#our-question h4,#our-tip h4
+{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 2px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.small-line
+{
+	margin:0 auto;
+	height:1px; 
+	width:9%;
+	background-color: #333333;
+}
+/*Middle Banner starts...........................................................................*/
+#middle-banner
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	/*background: url('../images/whiteboard.jpg') no-repeat center center fixed;*/
+	height: 925px;
+}
+#banner2
+{
+	width: 100%;
+}
+/* Our Tip Starts...............................................................................*/
+#our-tip
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+/*
+#our-tip h4
+{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 2px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+}*/
+/* Coming Soon Starts...........................................................................*/
+#coming-soon
+{
+	margin-top: 40px;
+	
+	height: 107px;
+	width: 100%;
+	background-color: #41dbeb;
+	text-align: center;
+}
+#coming-soon h3
+{
+	margin-top: 40px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/*Are you a lawyer Container Starts............................................................*/
+#are-you-lawyer
+{
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: #f2f2f2;
+
+
+}
+.are-you-container
+{
+	text-align: center;
+}
+.are-you-container h3
+{
+	color: #41dbeb;
+	font-family: Arvo;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 19px;
+	letter-spacing: 4px;
+
+}
+.are-you-container h4
+{
+	width: 67%;
+	margin: 0 auto;
+}
+.small-line.margin
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#button2 .btn
+{
+	position: relative;
+	left:-5px;
+	padding: 8px 12px 8px 12px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	background-color: #eb6a2b;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+#button2 .btn-default
+{
+	border-color: transparent;
+}
+/* Tag Line Starts.............................................................................*/
+#tag-line
+{
+	
+	text-align: center;
+	height: 107px;
+	background-color: #333333;
+	color: #41dbeb;
+}
+#tag-line h3
+{
+	margin-top: 40px;
+}
+
+#hiring
+{
+	text-align: center;
+	height: 42px;
+	background-color: #41dbeb;
+	color: #333333;
+	font-weight: bold;
+}
+
+
+/*Connect With us...............................................................................*/
+
+#connect-us
+{
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.connect-heading h4
+{
+	text-align: center;
+	font-family: Arvo;
+	letter-spacing: 5px;
+	font-weight: bolder;
+}
+.footer-stuff
+{
+	margin-top: 50px;
+}
+.footer-nav
+{
+	text-align: center;
+}
+.p-span
+{
+	color: #eb6a2b;
+	font-style: italic;
+	font-weight: bold;
+}
+/*Pop Up Stuff Starts....................................................................*/
+.pop-ups
+{
+	color: #333333;
+}
+#overlay 
+{
+	position: fixed;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-color:black;
+	z-index: 50;
+	opacity: .9;
+	display: none;
+}
+#overlay div
+{
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+	bottom:116px;
+	display: none;
+	height: 184px;
+	width: 600px;
+	background-color: #fff;
+	z-index: 1000;
+	text-align: center;
+	margin: 0 auto;	
+}
+.cross
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 30px;
+	width: 30px;
+}
+.overlay-p
+{
+	text-align: center;
+	position: relative;
+	top:60px;
+	text-transform: uppercase;
+	font-family: Ubuntu;
+	color: #41dbeb;
+	font-size: 16px;
+}
+.bottom-overlay-p
+{
+	position: relative;
+	top:60px;
+	color: #333333;
+	font-style: italic;
+	font-size: 14px
+
+}
+/*Media queries Start..............................................................................*/
+@media (max-width: 712px){
+	
+	.top-link1{
+		display: none;
+	}
+	
+}
+@media (max-width: 768px){
+	
+}

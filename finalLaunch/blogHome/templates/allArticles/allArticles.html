@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en-us">
+<head>
+	<title>LAWYERED</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"> 
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'allArticles/css/allArticles.css' %}">
+  
+</head>
+<body>
+	<header id="top-header">
+		<div class="container">
+			<span class="left-stuff"><a href="{% url 'ldHomeView' %}"><img id="blog-logo" src="{% static 'CommonImages/ld.png' %}"></a></span>
+			<span class="article-tag1"><a href="{% url 'homeView' %}"><img id="home-link" src="{% static 'CommonImages/logo.png' %}"></a></span>
+			<span class="article-tag2">ARTICLES</span>
+		</div>
+	</header>
+
+	<section id="recent-post-banner">
+	<ul class="slides rslides">
+	{% for article in latest_articles %}
+		<li class="row slide">
+			<div class="col-xs-8 post-image">
+				<img src="{{article.cover_image.url}}" width="100%" height="330">
+			</div>
+			<div class="col-xs-4 post-text">
+				<span class="arrow-left"></span>
+				<div class="slider-control">
+					<span class="slider-left">left</span>
+					<span class="slider-right">right</span>
+				</div>
+				<div class="recent-author-name">
+					<span class="recent-pub-by">By {{article.article_author}}</span>
+				</div>
+				<p class="recent-article-txt">{{article.article_title}}</p>
+				<div class="recent-pub-info">
+					<img class="time-img" src="">
+					<span class="recent-pub-time">{{article.pub_date|time:"H:i"}} |</span>
+					<span class="recent-pub-date">{{article.pub_date|date:"M d,Y"}}</span>
+
+				</div>
+				<div class="recent-more">
+					<span><a href="{% url 'singleArticleView' article.article_slug %}">Read more</a></span>
+				</div>
+			</div>
+		</li>
+			{% endfor %}
+			
+		</ul>
+	</section>
+	
+	<section id="this-week">
+		<div class="container">
+			<div class="row">
+			{% for article in latest_articles %}
+				<div class="col-sm-4 article-box">
+					<a href="{% url 'singleArticleView' article.article_slug %}">
+					<img class="article-img" src="{{article.cover_image.url}}" width="313" height="202">
+					</a>
+					<div class="all-other">
+					<div class="date-time">
+						<img src="" height="20"width="20">
+						<span class="time-area">{{article.pub_date|time:"H:i"}}|</span>
+						<span class="date-area">{{article.pub_date|date:"M d,Y"}}</span>
+					</div>
+
+					<h4 class="article-title">{{article.article_title}}</h4>
+					<span class="author-name">By {{article.article_author}}</span>
+					</div>
+				</div>
+			{% endfor %}	
+			</div>
+		</div>
+	</section>
+
+	<section id="tag-line">
+    	<div class="container">
+      		<h3>Legal Solution. Better. Easier. Faster.</h3>
+   		</div>
+  	</section>
+
+  	<section id="hiring">
+    	<div class="container">
+      		<h5>We're Hiring!</h5>
+    	</div>
+  	</section>
+  	<section id="connect-us">
+    	<div class="container">
+      		<div class="connect-heading">
+        		<h4>CONNECT WITH US</h4>
+        		<div class="small-line"></div>
+      		</div>
+      		<div class="row footer-stuff">
+        	<div class="col-sm-4 col-md-4 footer-nav">
+          		<p>Give us a call!</p>
+          		<p>Call @<span class="p-span">+91-9898989989</span></p>
+        	</div>
+        	<div class="col-sm-4 footer-nav">
+          		<p>Have a question?</p>
+          		<p>Email us @<a class="p-span" href="">info@lawyered.in</a></p>
+        	</div>
+        	<div class="col-sm-4 footer-nav">
+          		<p>We are social @</p>
+          		<p>
+            		<span><a href="https://www.facebook.com/lawyered.in"><img src="{% static 'CommonImages/facebook_.png' %}" height="30" width="30"></a></span>
+            		<span><a href=""><img src="{% static 'CommonImages/google_.png' %}" height="30" width="30"></a></span>
+            		<span><a href="https://www.linkedin.com/company/lawyered"><img src="{% static 'CommonImages/linkedin_.png' %}" height="30" width="30"></a></span>
+            		<span><a href="https://twitter.com/LawyeredTweets"><img src="{% static 'CommonImages/twitter_.png' %}" height="30" width="30"></a></span>
+          		</p>
+        	</div>
+      		</div>    
+    	</div>  
+  	</section>
+	<script type="text/javascript" src="{% static 'jquery/jquery-2.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'jquery/responsiveslides.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'allArticles/js/allArticles.js' %}"></script>
+</body>
+</html>

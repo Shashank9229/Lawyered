@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load social_share %}  
+<html lang="en-us">
+<head>
+	<title>LAWYERED</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta property="og:url"           content="http://127.0.0.1:8000/legal-disrupt/articles/the-first-person-you-need-onboard/"/>
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="{{current_object.cover_image.url}}" />
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"> 
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'singleArticle/css/singleArticle.css' %}">
+
+</head>
+<body>
+	
+	<header id="top-header">
+		<div class="container">
+			<span class="left-stuff"><a href="{% url 'ldHomeView' %}"><img id="blog-logo" src="{% static 'CommonImages/ld.png' %}"></a></span>
+			<span class="article-tag1"><a href="{% url 'homeView' %}"><img id="home-link" src="{% static 'CommonImages/logo.png' %}"></a></span>
+			<span class="article-tag2">ARTICLES</span>
+		</div>
+	</header>
+	<section id="article-top">
+		<div class="container">
+		<!--	<div class="">
+				<span>ARTICLE</span>
+			</div>-->
+			<div class="pub-date">
+				
+				<span>{{current_object.pub_date|date:"M d,Y"}} |</span>
+				<span>{{current_object.pub_date|time:"H:i"}}</span>
+			</div>
+			<div>
+				<h3>
+					{{current_object.article_title}}
+				</h3>
+			</div>
+			<div class="article-by">
+				<span>by {{current_object.article_author}}</span>
+			</div>
+		</div>
+	</section>
+	<section id="article-banner">
+		<div class="container img-inside">
+			<img src="{{current_object.cover_image.url}}">
+		</div>
+		
+	</section>
+	<section id="article-body">
+		<div class="container">
+			<div class="col-sm-9 content-p">
+				{{current_object.article_body|linebreaks}}
+			</div>
+			
+			<div class="col-sm-3 share-butts">
+				<div class="button2 f-share"><a class="btn btn-default" href="">
+					<span><img src="">SHARE</span>
+				</a></div>
+				<div class="button2 in-share"><a class="btn btn-default" href="">
+					<span><img src="">SHARE</span>
+				</a></div>
+				<div class="button2 tw-share"><a class="btn btn-default" href="">
+					<span><img src="">SHARE</span>
+				</a></div>
+				<div class="button2 g-share"><a class="btn btn-default" href="">
+					<span><img src="">SHARE {% post_to_gplus object_or_url "share" %}</span>
+				</a></div>
+			</div>
+		</div>	
+	
+		
+	</section>
+	<section id="tag-line">
+    	<div class="container">
+      		<h3>Legal Solution. Better. Easier. Faster.</h3>
+    	</div>
+ 	</section>
+
+  	<section id="hiring">
+    	<div class="container">
+      		<h5>We're Hiring!</h5>
+    	</div>
+  	</section>
+
+
+	<section id="connect-us">
+    <div class="container">
+      <div class="connect-heading">
+        <h4>CONNECT WITH US</h4>
+
+        <div class="small-line"></div>
+      </div>
+      <div class="row footer-stuff">
+        <div class="col-sm-4 col-md-4 footer-nav">
+          <p>Give us a call!</p>
+          <p>call @<a class="p-span" href="tel:+91-9898989898">+91-9898989989</a></p>
+        </div>
+        <div class="col-sm-4 footer-nav">
+          <p>Have a question?</p>
+          <p>Email us @<a class="p-span" href="mailto:info@lawyered.com">info@lawyered.in</a></p>
+        </div>
+        <div class="col-sm-4 footer-nav">
+          <p>We are social @</p>
+          <p>
+            <span><a href="https://www.facebook.com/lawyered.in"><img src="{% static 'CommonImages/facebook_.png' %}" height="20" width="20"></a></span>
+            <span><a href=""><img src="{% static 'CommonImages/google_.png' %}" height="20" width="20"></a></span>
+            <span><a href="https://www.linkedin.com/company/lawyered"><img src="{% static 'CommonImages/linkedin_.png' %}" height="20" width="20"></a></span>
+            <span><a href="https://twitter.com/LawyeredTweets"><img src="{% static 'CommonImages/twitter_.png' %}" height="20" width="20"></a></span>
+          </p>
+        </div>
+      </div>    
+    </div>  
+  </section>
+  <!--
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1656939744541658";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button" data-href="http://127.0.0.1:8000/legal-disrupt/articles/the-first-person-you-need-onboard/" data-layout="button_count"></div>-->
+{% post_to_facebook object_or_url "Post to Facebook!" %}
+</body>
+</html>

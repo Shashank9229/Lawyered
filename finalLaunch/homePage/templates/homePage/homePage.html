@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en-us">
+
+<head>
+	<title>LAWYERED</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"> 
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homePage/css/homePage.css' %}">
+</head>
+
+<body>
+
+	<header>
+  <!--  <img id="background-img" src="{% static 'homePage/images/banner.jpg' %}">-->
+		<div class="container header-container">
+			<div class="top-links">
+				<span class="top-link1"><a id="will-scroll" href="">CONNECT</a></span>
+				<span class="top-link2"><a href="{% url 'ldHomeView' %}">LEGAL DISRUPT</a></span>
+			</div>	
+			<img id="lawyered-logo" src="{% static 'CommonImages/logo.png' %}">	
+      <img id="rocket-img" src="{% static 'CommonImages/rocket.png' %}">
+      {% block content %}
+      {% endblock %}
+      <div id="head-head" >
+			   <span id="jugard">CONNECTING</span>
+         <h4 id="header-banner"><strong id="change-stuff">startups</strong></h4>
+         <p>to legal advisors</p>
+      </div>    
+		</div>	
+	</header>
+
+	<section id="our-question">
+    <div class="container">
+      <h4>Are you working hard to change your idea into a successful business?Having problems structuring your work?Unsure about how to handle legal compliances?</h4>
+      <div class="small-line"></div>
+    </div>
+	</section>
+
+  <section id="middle-banner">
+    <div class="container">
+      <img id="banner2" src="{% static 'homePage/images/whiteboard.jpg' %}">
+    </div>
+  </section>
+
+  <section id="our-tip">
+    <div class="container">
+      <h4>Great organisations are build on strong foundations.Legal is no more an option rather a necessity.
+      We will solve all your queries and help you connect with your personal legal advisors.
+      </h4>
+    </div>
+  </section>
+
+  <section id="coming-soon">
+    <div class="container coming-soon-container">
+      <h3>
+        It's almost here!
+      </h3>
+    </div>
+  </section>
+
+  <section id="are-you-lawyer">
+    <div class="container are-you-container">
+      <h3>Are you a lawyer?</h3>
+      <h6>we value your advice & expertise.</h6>
+      <img src="{% static 'homePage/images/heart.png' %}">   
+      <h4>Join our Network and help nurtutre ideas into effective organisations.While you do this 
+          ,We help you get value for your work. 
+      </h4>   
+      <div class="small-line margin"></div>
+      <div id="button2"><a class="btn btn-default" href="{% url 'lawyerRegisterView' %}">get me an early access</a></div>
+    </div>
+  </section>
+
+  <section id="tag-line">
+    <div class="container">
+      
+      <h3>Legal Solution. Better. Easier. Faster.</h3>
+      
+    </div>
+  </section>
+
+  <section id="hiring">
+    <div class="container">
+      <h5>We're Hiring!</h5>
+    </div>
+  </section>
+
+	<section id="connect-us">
+    <div class="container">
+      <div class="connect-heading">
+        <h4>CONNECT WITH US</h4>
+        <div class="small-line"></div>
+      </div>
+      <div class="row footer-stuff">
+        <div class="col-sm-4 col-md-4 footer-nav">
+          <p>Give us a call!</p>
+          <p>Call @<span class="p-span">+91-9898989989</span></p>
+        </div>
+        <div class="col-sm-4 footer-nav">
+          <p>Have a question?</p>
+          <p>Email us @<a class="p-span" href="">info@lawyered.in</a></p>
+        </div>
+        <div class="col-sm-4 footer-nav">
+          <p>We are social @</p>
+          <p>
+            <span><a href="https://www.facebook.com/lawyered.in"><img src="{% static 'CommonImages/facebook_.png' %}" height="30" width="30"></a></span>
+            <span><a href=""><img src="{% static 'CommonImages/google_.png' %}" height="30" width="30"></a></span>
+            <span><a href="https://www.linkedin.com/company/lawyered"><img src="{% static 'CommonImages/linkedin_.png' %}" height="30" width="30"></a></span>
+            <span><a href="https://twitter.com/LawyeredTweets"><img src="{% static 'CommonImages/twitter_.png' %}" height="30" width="30"></a></span>
+          </p>
+        </div>
+      </div>    
+    </div>  
+  </section>
+
+  
+	
+   <section id="overlay">
+   	<div>
+     <a href="" id="cross-click"><img  class="cross" src="{% static 'homePage/images/cross.png'%}"></a>
+     <p class="overlay-p">Thank You for subscribing to our newsletter!</p>
+     <p class="bottom-overlay-p">we promise to send you only important stuff </p>
+    </div>        
+    </section>
+  
+	<script type="text/javascript" src="{% static 'jquery/jquery-2.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'homePage/js/homePageMain.js' %}"></script>
+  
+</body>
+</html>

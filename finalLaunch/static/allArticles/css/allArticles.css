@@ -1,0 +1,320 @@
+body
+{
+	margin: 0 auto;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: justify;
+	font-family: Ubuntu!important;
+	color: #333333!important;
+}
+li
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+
+
+/* Header Starts.....................................................................................................*/
+#top-header
+{
+	width:100%; 
+	height:65px;
+	background-color: #1B1A1A;
+}
+#top-header div
+{
+
+}
+#blog-logo
+{
+	margin-top: 20px;
+	height: 16px;
+	width: 142px;
+	float: left;
+}
+.article-tag1,.article-tag2
+{
+	position: relative;
+	top: 20px;
+	color: #41dbeb;
+	float: right;
+	
+}
+.article-tag1
+{
+	margin-left: 30px;
+}
+.article-tag2
+{
+	font-size: 11px;
+	margin-top: 4px;
+	color: #fff;
+}
+
+#home-link
+{
+	height: 22px;
+	width: 64px;
+
+}
+#name-container
+{
+	margin-top: 50px;
+}
+.top-header
+{
+	overflow: hidden;
+}
+.top-header h5
+{
+	display: inline-block;
+	margin-top: 30px;
+	letter-spacing: 2px;
+	color: #41dbeb;
+	font-weight: bold;
+}
+.right-header
+{
+	float: right;
+	
+}
+.right-header
+{
+	padding: 0px;
+}
+.right-header li
+{
+	margin-top: 20px;
+	display: inline-block;
+}
+.f2
+{
+	margin-left: 20px;
+}
+.f1 a,
+.f2 a
+{
+	color: #fff;
+
+}
+.article-tag2
+{
+	color: #41dbeb;
+}
+/*Recent Post Banner..................................................................................................*/
+#recent-post-banner
+{
+	height: 330px;
+	overflow: hidden;
+}
+#recent-post-banner .row
+{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.post-text
+{
+	
+	position: relative;
+	padding-left: 20px!important;
+	background-color: black;
+	height: 330px;
+}
+.post-image,
+.post-text
+{
+	padding: 0px;
+}
+.slides
+{
+	display: block;
+	margin:0px;
+	padding: 0px;
+}
+.slide
+{
+	float: left;
+	list-style-type: none;
+	width: 100%;
+}
+.slider-control
+{
+	height: 60px;
+}
+.slider-left,
+.slider-right
+{
+	cursor: pointer;
+}
+.slider-right
+{
+	margin-left: 20px;
+}
+
+
+.arrow-left
+{
+	position: absolute;
+	left: -4.3%;
+	top:40%;
+	width: 0px; 
+	height: 0px; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent; 
+	border-right:20px solid black;
+	z-index: 1; 
+}
+.recent-author-name
+{
+	color: #41dbeb;
+	font-style: italic;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.recent-article-txt
+{
+	color: #fff;
+	width: 60%;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.recent-pub-info
+{
+	overflow: hidden;
+}
+.time-img
+{
+	width: 20px!important;
+	height: 20px;
+	float: left;
+	display: inline!important;
+
+}
+.recent-pub-time,
+.recent-pub-date
+{
+	margin-top: 3px;
+	color: #fff;
+	font-size: 11px;
+}
+
+.recent-more
+{
+	margin-top: 50px;
+}
+.recent-more span a
+{
+	color:  #eb6a2b;
+	font-style: italic;
+	font-size: 12px;
+
+}
+/*This week.......................................................................*/
+#this-week
+{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.all-other
+{
+	border: 1px solid #D1D1D1;
+	padding: 10px 5px 10px 5px;
+}
+.article-img
+{
+	width: 100%;
+}
+.author-name
+{
+	font-style: italic;
+	color: #41dbeb;
+}
+
+/*Tag line starts.................................................................*/
+#tag-line
+{
+	
+	text-align: center;
+	height: 107px;
+	background-color: #333333;
+	color: #41dbeb;
+}
+#tag-line h3
+{
+	margin-top: 40px;
+}
+
+#hiring
+{
+	text-align: center;
+	height: 42px;
+	background-color: #41dbeb;
+	color: #333333;
+	font-weight: bold;
+}
+/*Connect With us...............................................................................*/
+
+#connect-us
+{
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.connect-heading h4
+{
+	text-align: center;
+	font-family: Arvo;
+	letter-spacing: 5px;
+	font-weight: bolder;
+}
+.footer-stuff
+{
+	margin-top: 50px;
+}
+.footer-nav
+{
+	text-align: center;
+}
+.p-span
+{
+	color: #eb6a2b;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*...................................SLIDER.......................................*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }

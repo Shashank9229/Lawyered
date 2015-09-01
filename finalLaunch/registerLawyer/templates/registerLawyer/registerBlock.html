@@ -1,0 +1,86 @@
+{% extends "registerLawyer/registerBase.html" %}
+{% load staticfiles %}
+{% block registerLawyer %}
+	<section id="thrilled-us">
+		<p>We are thrilled that you'd like to apply for early registration for <span>LAWYERED</span>
+			please fill out the form below and submit us your details!
+		</p>
+		
+	</section>
+
+
+  <section id="form-section">
+	<div class="container all-form-stuff">
+		<h5><strong>Fill in your details and register:</strong></h5>
+		<form id="register-form" action="" method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			<div class="cover-box">
+		      <p class="input2 first">
+				<label class="input-labels"for="id_first_name">NAME *</label><br>
+				{{reg_form.first_name}}<br><br>
+				<span class="errors">{{reg_form.first_name.errors.as_text}}<span>
+			  </p>
+			  <p class="input2 second" >	
+				<label class="input-labels"  for="id_last_name"></label><br>
+				{{reg_form.last_name}}<br>
+				<span class="errors">{{reg_form.last_name.errors.as_text}}</span>
+			  </p>
+			</div>
+			<div class="cover-box">
+		      <p class="input2 first">
+				<label class="input-labels" for="id_city_name">CITY *</label><br>
+				{{reg_form.city_name}}<br>
+				<span class="errors">{{reg_form.city_name.errors.as_text}}</span>
+			  </p>
+			  <p class="input2 second">	
+				<label class="input-labels" for="id_company_name">COMPANY</label><br>
+				{{reg_form.company_name}}<br>
+				<span class="errors">{{reg_form.company_name.errors.as_text}}
+			  </p>
+			</div>
+			<div class="cover-box">
+		      <p class="input2 first">
+				<label class="input-labels" for="id_date_of_birth">DATE OF BIRTH *</label><br>
+				<span class="date-of-b"> {{reg_form.date_of_birth}}
+				</span><br>
+				<span class="errors">{{reg_form.date_of_birth.errors.as_text}}</span>
+			  </p>
+			  <p class="input2 second">	
+				<label class="input-labels" for="id_gender">GENDER</label><br>
+				{{reg_form.gender}}<br>
+				<span class="errors">{{reg_form.gender.errors.as_text}}</span>
+			  </p>
+			</div>
+			<div class="cover-box">
+		      <p class="input2 first">
+				<label class="input-labels" for="id_email">E-MAIL*</label><br>
+				{{reg_form.email}}<br>
+				<span class="errors">{{reg_form.email.errors.as_text}}</span>
+			  </p>
+			  <p class="input2 second">
+				<label class="input-labels" for="id_phone_number">PHONE NUMBER*</label><br>
+				{{reg_form.phone_number}}<br>
+				<span class="errors">{{reg_form.phone_number.errors.as_text}}</span>
+			  </p>
+			</div>
+			<div class="cover-box">
+		      <p class="input2 first">
+				<label class="input-labels" for="id_state_bar_no">STATE BAR</label><br>
+				{{reg_form.state_bar_no}}<br>
+				<span class="errors">{{reg_form.state_bar_no.errors.as_text}}</span>
+			  </p>
+			  <p class="input2 second">	
+				<label class="input-labels" for="id_bar_council_no">BAR COUNCIL NUMBER</label><br>
+				{{reg_form.bar_council_no}}<br>
+				<span class="errors">{{reg_form.bar_council_no.errors.as_text}}</span>
+			  </p>
+			</div>
+			<div class="big-line"></div>
+			<p class="mandatory-fields">* Mandatory fields</p>
+			<input class="btn btn-default" id="button2" type="submit" value="submit">
+		</form>
+	</div>	
+</section>
+<script type="text/javascript" src="{% static 'jquery/jquery-2.1.3.js' %}"></script>
+
+{% endblock %}

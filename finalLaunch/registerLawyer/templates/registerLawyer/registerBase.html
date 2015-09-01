@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">-->
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'registerLawyer/css/registerLawyer.css' %}">
+</head>
+<body>
+<header>
+	<div class="container">
+		<img id="lawyered-logo" src="{% static 'registerLawyer/images/logo.png' %}" height="50" width="155">
+	</div>
+</header>
+{% block registerLawyer %}
+{% endblock %}
+{% block thankYou %}
+{% endblock %}
+
+
+
+<section id="connect-us">
+		<div class="container">
+			<div class="connect-heading">
+				<h4>CONNECT WITH US</h4>
+				<div class="small-line"></div>
+			</div>
+			<div class="row footer-stuff">
+				<div class="col-sm-4 col-md-4 footer-nav">
+					<p>Give us a call!</p>
+					<p>call @<span class="p-span">+91-9898989898</span></p>
+				</div>
+				<div class="col-sm-4 footer-nav">
+					<p>Have a question?</p>
+					<p>Email us @<span class="p-span">info@lawyered.in</span></p>
+				</div>
+				<div class="col-sm-4 footer-nav">
+					<p>We are social @</p>
+					<p>
+						<span><img src=""></span>
+						<span><img src=""></span>
+						<span><img src=""></span>
+						<span><img src=""></span>
+					</p>
+				</div>
+			</div>		
+		</div>	
+	</section>
+
+
+</body>
+</html>

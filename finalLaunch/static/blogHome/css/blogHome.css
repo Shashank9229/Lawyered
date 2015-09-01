@@ -1,0 +1,313 @@
+body
+{
+	margin: 0 auto;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-family: Ubuntu!important;
+	color: #333333!important;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+
+}
+
+
+li
+{
+	list-style: none;
+}
+
+
+::-webkit-input-placeholder
+{
+   	color: #fff;
+   	font-size: 8pt;
+   	font-style: italic;
+ 
+}
+#button2
+{
+	margin-top: 15px;
+}
+#button2.btn
+{
+	padding: 6px 12px 6px 12px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	background-color: #eb6a2b;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+#lawyered-link
+{
+	height: 21px;
+	width: 71px;
+	margin-top: -2px;
+}
+
+#button2.btn-default
+{
+	border-color: transparent;
+}
+.form2
+{
+	overflow: hidden;
+}
+/*Header Starts.....................................................................................*/
+
+header
+{
+	height: 683px;
+	width: 100%;
+	background-image: url('../images/blog-banner.jpg');
+	/*background-position: -20px -20px;*/
+	background-repeat: no-repeat;
+}
+.header-middle
+{
+	margin-top: 165px!important;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff
+}
+.header-middle h4
+{
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+.header-middle .p-bottom,.header-middle .p-middle
+{
+	font-size: 18px;
+	margin-top: 20px;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+.header-nav
+{
+	margin-top: 50px;
+	margin-right: 45px;
+}
+#blog-logo
+{
+	width: 375px;
+	height: 40px;
+}
+#lawyered-p
+{
+	height: 30px;
+	width: 83px;
+}
+.nav-ele
+{
+	float: right;
+	margin-left: 20px;
+	font-size: 11px;
+	font-weight: bold;
+}
+.nav-ele a
+{
+	color: #fff;
+}
+/*Our Need Starts..................................................................................*/
+#our-need
+{
+	margin-top: 50px!important;
+	margin: 0 auto;
+	text-align: center;
+	color: #333333;
+}
+.need-info h4
+{
+	margin:0 auto;
+	width: 63%;
+	color: #41dbeb;
+	font-family: Arvo;
+	font-weight: bold; 
+	font-style: italic;
+	font-size: 19px;
+	letter-spacing:2px;
+	line-height: 1.4;
+
+}
+.need-info p
+{
+	letter-spacing: 1px;
+	line-height: 1.4;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.small-line
+{
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	height: 1px;
+	width: 10%;
+	background-color: #eb6a2b;
+}
+/* Form-area Starts...............................................................................*/
+#form-area
+{
+	margin-top: 110px;
+	margin-bottom: 115px;
+}
+.form2 .form-group
+{
+	margin-bottom: 0px!important;
+}
+.about-register
+{
+	height: 265px;
+	padding: 20px 30px 30px 30px;
+	border:2px solid #f2f2f2;
+	margin-left: 2%;
+
+}
+.about-register p
+{
+	text-align: left;
+	width: 87.5%;
+}
+.register-form
+{
+	height: 266px;
+	margin-left: 2.6%;
+	padding: 20px 30px 20px 30px;
+	border:2px solid #f2f2f2;
+}
+.top-2
+{
+	overflow: hidden;
+}
+.form-group input
+{
+	background: #f2f2f2!important;
+    border-radius:0px!important;
+    border: none;
+}
+.top-2f,
+.bottom-2f
+{
+	float: left;
+	width: 45%;
+}
+.right-2
+{
+	margin-left: 10%;
+}
+.top-2f
+{
+	margin-top: 8px;
+}
+
+.bottom-2f
+{
+	margin-top: 15px;
+
+}
+.errors
+{
+	font-size: 11px;
+	color: red;
+	font-style: italic;
+}
+
+/*Articles Area Starts............................................................................*/
+
+#articles-area
+{
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+
+}
+.articles-container .small-line
+{
+	margin-bottom: 40px;
+}
+.article-images
+{
+	width: 100%;
+	height: 166px;
+}
+.article-boxes
+{
+	border: 1px solid #f2f2f2;
+}
+.article-boxes a
+{
+	display: block;
+
+}
+.articles-heading 
+{
+
+}
+.articles-heading h3
+{
+	
+}
+/*Connect Us Starts..................................................................................*/
+#connect-us
+{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.connect-heading h4
+{
+	text-align: center;
+	font-family: Arvo;
+	letter-spacing: 5px;
+	font-weight: bolder;
+}
+.footer-stuff
+{
+	margin-top: 50px;
+}
+.footer-nav
+{
+	text-align: center;
+}
+.p-span
+{
+	color: #eb6a2b;
+	font-style: italic;
+	font-weight: bold;
+}
+.p-span:hover
+{
+	color: #eb6a2b;
+}
+/*Tag Line Stuff Starts..................................................................*/
+#tag-line
+{
+	margin-top: 50px;
+	text-align: center;
+	height: 107px;
+	background-color: #333333;
+	color: #41dbeb;
+}
+#tag-line h3
+{
+	margin-top: 40px;
+}
+
+#hiring
+{
+	text-align: center;
+	height: 42px;
+	background-color: #41dbeb;
+	color: #333333;
+	font-weight: bold;
+}
+
